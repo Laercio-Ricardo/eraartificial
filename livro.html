@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Era Artificial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>A ERA ARTIFICIAL</h1>
+        <nav>
+            <ul>
+                <li><a href="#descricao">Sobre o Livro</a></li>
+                <li><a href="#autor">Autor</a></li>
+                <li><a href="#comprar">Comprar</a></li>
+            </ul>
+        </nav>
+    </div>
+        
+    <main>
+        
+        
+        
+        <section id="descricao" class="section-box zoomable">
+            <img src="imagem1.jpeg" alt="Imagem 1">
+            <h2>Descrição</h2>
+            
+            <p>Uma obra de ficção científica que explora os dilemas éticos e morais da inteligência artificial, ambientada em um futuro distópico onde humanos e máquinas coexistem.</p>
+        </section>
+        <section id="autor" class="section-box zoomable">
+            <h2>O Autor</h2>
+            <p>Conheça Laércio Ricardo, o brilhante autor por trás do cativante universo de "A Era Artificial". Ele aprendeu isso tudo na renomada Dev Media, Laércio mergulha os leitores em uma narrativa envolvente que desafia as fronteiras entre a humanidade e a tecnologia. Com uma prosa habilidosa e uma imaginação fértil, Laércio tece uma história que provoca reflexão e inspira esperança em um futuro movido pela inovação. Sua visão única e sua paixão pela escrita fazem de "A Era Artificial" uma leitura obrigatória para entusiastas de ficção científica e futurismo.</p>
+        </section>
+        
+        <section id="comprar" class="section-box zoomable">
+            <button onclick="openPopup()">Comprar Agora</button>
+        </section>
+        
+        <script>
+        function openPopup() {
+            // URL da página de compra
+            var url = "comprar.html";
+            // Configuração da janela pop-up
+            var width = 600;
+            var height = 400;
+            var left = (screen.width - width) / 2;
+            var top = (screen.height - height) / 2;
+            var options = "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top + ",resizable=yes,scrollbars=yes";
+        
+            // Abre a janela pop-up
+            window.open(url, "_blank", options);
+        }
+        </script>
+            
+         </main>
+    <footer>
+        <p>&copy; 2024 A Era Artificial por Laércio Ricardo. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

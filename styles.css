@@ -1,0 +1,136 @@
+
+body {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.section-box {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra maior */
+    transition: transform 0.3s ease; /* Adiciona transição para um efeito suave */
+}
+
+.zoomable:hover {
+    transform: scale(1.05); /* Aplica um zoom de 5% ao passar o mouse */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Sombra maior ao passar o mouse */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+.slide {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Defina o tamanho máximo do slide conforme desejado */
+    height: auto;
+    overflow: hidden;
+    
+}
+
+slide-container {
+    display: flex;
+}
+
+slide-container img {
+    width: 100%;
+    height: auto;
+    display: none;
+   
+}
+
+slide-container img:first-child {
+    display: block;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: black;
+}
+
+nav ul li a:hover {
+    background-color: green;
+}
+
+main {
+    padding: 20px;
+    text-align: center; /* Alinha todos os textos ao centro */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo do botão Comprar */
+#comprar button {
+    background-color: #4CAF50; /* Verde */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 1.5s infinite alternate; /* Aumentando a intensidade da animação */
+}
+
+/* Efeito de hover */
+#comprar button:hover {
+    background-color: #388e3c; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Centralizando o botão */
+#comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Animação */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1); /* Aumentando a escala para tornar mais pulsante */
+    }
+}
